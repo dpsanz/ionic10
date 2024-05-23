@@ -1,0 +1,7 @@
+{
+  "name": "transfDadosEntrePag",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

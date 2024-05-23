@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-input label="Floating label" labelPlacement="floating" placeholder="Nome: " [(ngModel)]="nome"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input label="Floating label" labelPlacement="floating" placeholder="E-mail: " [(ngModel)]="email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input label="Floating label" labelPlacement="floating" placeholder="Telefone: " [(ngModel)]="telefone"></ion-input>
+  </ion-item>
+
+  <ion-button expand="block" (click)="abrirTela()">Cadastrar</ion-button>
+</ion-content>
