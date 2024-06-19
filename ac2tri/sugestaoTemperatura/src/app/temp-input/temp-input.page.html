@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Temp Input</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>Month 1</ion-label>
+      <ion-range min="0" max="50" pin="true" [(ngModel)]="temperatures[0]">
+        <ion-label slot="start">0°C</ion-label>
+        <ion-label slot="end">50°C</ion-label>
+      </ion-range>
+    </ion-item>
+    <ion-item>
+      <ion-label>Month 2</ion-label>
+      <ion-range min="0" max="50" pin="true" [(ngModel)]="temperatures[1]">
+        <ion-label slot="start">0°C</ion-label>
+        <ion-label slot="end">50°C</ion-label>
+      </ion-range>
+    </ion-item>
+    <ion-item>
+      <ion-label>Month 3</ion-label>
+      <ion-range min="0" max="50" pin="true" [(ngModel)]="temperatures[2]">
+        <ion-label slot="start">0°C</ion-label>
+        <ion-label slot="end">50°C</ion-label>
+      </ion-range>
+    </ion-item>
+    <ion-item>
+      <ion-label>Month 4</ion-label>
+      <ion-range min="0" max="50" pin="true" [(ngModel)]="temperatures[3]">
+        <ion-label slot="start">0°C</ion-label>
+        <ion-label slot="end">50°C</ion-label>
+      </ion-range>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="full" (click)="suggestCrops()">Suggest Crops</ion-button>
+</ion-content>
