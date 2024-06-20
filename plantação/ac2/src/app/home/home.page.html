@@ -1,0 +1,60 @@
+
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      CÁLCULO TEMPERATURAS
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+<ion-list>
+
+  <ion-item>
+    <ion-label>Mês 1</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-range (ionChange)="onIonChange1($event)" [ticks]="true" [snaps]="true" [min]="0" [max]="100"></ion-range>
+  </ion-item>
+  <ion-item>
+    <ion-label>{{valorRange1}}</ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Mês 2</ion-label>
+  </ion-item>
+ <ion-item ion-item>
+    <ion-range (ionChange)="onIonChange2($event)" [ticks]="true" [snaps]="true" [min]="0" [max]="100"></ion-range>
+  </ion-item>
+  <ion-item>
+    <ion-label>{{valorRange2}}</ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Mês 3</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-range (ionChange)="onIonChange3($event)" [ticks]="true" [snaps]="true" [min]="0" [max]="100"></ion-range>
+  </ion-item>
+  <ion-item>
+    <ion-label>{{valorRange3}}</ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Mês 4</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-range (ionChange)="onIonChange4($event)" [ticks]="true" [snaps]="true" [min]="0" [max]="100"></ion-range>
+  </ion-item>
+  <ion-item>
+    <ion-label>{{valorRange4}}</ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-button (click)="abrirTela()">Confirmar</ion-button>
+  </ion-item>
+</ion-list>
+  </div>
+</ion-content>
